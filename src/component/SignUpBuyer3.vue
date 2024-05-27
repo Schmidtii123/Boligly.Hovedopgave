@@ -39,7 +39,7 @@ const goBack = () => {
             ButtonComponent(:secondary="true" @click="goBack") Tilbage
             ButtonComponent(:fullWidth="true" @click="goNext") Opret
 
-    LogInPictureBuyer 
+    img.img(src="/log-in-buyer.png")
 </template>
 
 <style scoped lang="sass">
@@ -51,6 +51,9 @@ const goBack = () => {
 .buttons
     gap: 8px
     display: flex
+
+.img
+    width: 700px
 
 .step
     gap: 16px

@@ -43,17 +43,22 @@ const goToHome = () => {
                         .span Har du ikke en konto?
                         a.log-in(href="/sign-up/realtor") sign up
 
-    LogInPictureRealtor 
+    img.img(src="/log-in-realtor.png" alt="picutre of a expendsiv house" )
+
 </template>
 
 <style lang="sass" scoped>
 .container
     display: flex
-
+    gap: 1rem
+.img
+    width: 700px
+    
     
 .sign-up
     gap: 80px
     width: 538px
+    padding-left: 12px 
 
     display: flex
     margin: 0 auto

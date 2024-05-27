@@ -7,7 +7,7 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 
 const goToSellerLogIn = () => {
-    router.push("/seller");
+    router.push("/sign-up/seller/1");
     };
 
 
@@ -53,7 +53,7 @@ const validateInput = () => {
     .sign-up__content
         template(v-if="!signedUp")
             .sign-up__welcome 
-                .sign-up__welcome-title Velkommen
+                .sign-up__welcome-title Opret som Sælger 
                 .sign-up__welcome-text Udfyld nedenstående formular og bliv registreret i Danmarks nye platform for direkte bolighandler 
             .sign-up__input 
                 input.input(placeholder="Name" type="text" v-model="formData.name")

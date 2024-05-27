@@ -58,7 +58,7 @@ const goBack = () => {
             ButtonComponent(:secondary="true" @click="goBack") Tilbage
             ButtonComponent(:fullWidth="true" @click="goNext") Næste
 
-    LogInPictureBuyer 
+    img.img(src="/log-in-buyer.png")
 </template>
 
 <style scoped lang="sass">
@@ -67,6 +67,9 @@ const goBack = () => {
     align-items: flex-start
     justify-content: space-between
 
+.img
+    width: 700px
+    
 .input-text
     min-width: 30rem
     height: 100%

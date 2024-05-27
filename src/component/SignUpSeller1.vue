@@ -40,7 +40,7 @@ const goBack = () => {
 
         ButtonComponent(:fullWidth="true" @click="goNext") Næste
 
-    SignUpSellerPicture
+    img.img(src="/sign-up-seller-picture.png" alt="Picture of a some data on a house, which is on top of the previous picture")
 
 </template>
 
@@ -49,6 +49,9 @@ const goBack = () => {
     display: flex
     align-items: flex-start
     justify-content: space-between
+
+img 
+    width: 700px
 
 .input
     padding: 12px 18px
