@@ -11,7 +11,7 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 
 const goBack = () => {
-  router.go(-1);
+  router.push("/my-address");
 };
 const goToNewAddress = () => {
   router.push("/my-address/new-address");
