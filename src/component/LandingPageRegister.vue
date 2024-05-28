@@ -27,7 +27,7 @@ const aboutItems = [
     buttonText: "Find køber til din bolig",
     avatarImageSrc: "/selling.jpeg",
     active: false,
-    link: "/sign-up/seller/1",
+    link: "/sign-up/seller",
   },
 ];
 

@@ -22,18 +22,23 @@ let selectedIcon = ref("QuestionRegister");
             a.list__choice(:class="{ 'active': selectedIcon === 'QuestionRegister' }", v-on:click="selectedIcon = 'QuestionRegister'")
                 PeopleIcon
                 p Registration and Account
+                
             a.list__choice(:class="{ 'active': selectedIcon === 'QuestionRealEstate' }", v-on:click="selectedIcon = 'QuestionRealEstate'")
                 HomeIcon
                 p Real Estate Ads and Search
+
             a.list__choice(:class="{ 'active': selectedIcon === 'QuestionFinancial' }", v-on:click="selectedIcon = 'QuestionFinancial'")
                 MoneyIcon
                 p Financial Issues
+
             a.list__choice(:class="{ 'active': selectedIcon === 'QuestionSupport' }", v-on:click="selectedIcon = 'QuestionSupport'")
                 FAQIcon
                 p Support
+
             a.list__choice(:class="{ 'active': selectedIcon === 'QuestionSecurity' }", v-on:click="selectedIcon = 'QuestionSecurity'")
                 ShieldIcon
                 p Security and Privacy
+
     .questions__section 
         QuestionRegister(v-if="selectedIcon === 'QuestionRegister'")
         QuestionRealEstate(v-if="selectedIcon === 'QuestionRealEstate'")
